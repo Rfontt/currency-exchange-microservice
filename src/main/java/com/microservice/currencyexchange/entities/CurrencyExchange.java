@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class CurrencyExchange {
     private Long id;
-    final private String from;
-    final private String to;
+    private String from;
+    private String to;
     private BigDecimal conversionMultiple;
 
     public CurrencyExchange() {

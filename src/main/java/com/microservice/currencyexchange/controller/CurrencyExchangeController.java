@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigDecimal;
+
 @RestController
 @RequestMapping("/currency-exchange")
 public class CurrencyExchangeController {
@@ -15,6 +17,8 @@ public class CurrencyExchangeController {
             @PathVariable final String to
 
     ) {
-        return new CurrencyExchange(from, to);
+        return new CurrencyExchange(
+                1L, from, to, BigDecimal.valueOf(50)
+        );
     }
 }

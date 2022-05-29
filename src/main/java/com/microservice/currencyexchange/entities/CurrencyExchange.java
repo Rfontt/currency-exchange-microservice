@@ -42,4 +42,14 @@ public class CurrencyExchange {
     public void setConversionMultiple(BigDecimal conversionMultiple) {
         this.conversionMultiple = conversionMultiple;
     }
+
+    @Override
+    public String toString() {
+        return "CurrencyExchange{" +
+                "id=" + id +
+                ", from='" + from + '\'' +
+                ", to='" + to + '\'' +
+                ", conversionMultiple=" + conversionMultiple +
+                '}';
+    }
 }
